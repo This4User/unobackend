@@ -82,7 +82,7 @@ export class DeckService {
 
 	getCard(): CardType {
 		const lastCardIndex = this._deck.length;
-		const card = this._deck[lastCardIndex];
+		const card = this._deck[lastCardIndex - 1];
 
 		this._deck.pop();
 

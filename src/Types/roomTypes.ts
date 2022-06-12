@@ -1,5 +1,5 @@
 export enum RoomEvents {
-	addPlayer = "addPlayer",
+	createRoom = "createRoom",
 	join = "join",
 	gameStart = "gameStart",
 	gameEnd = "gameEnd"

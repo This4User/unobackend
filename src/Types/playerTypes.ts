@@ -3,6 +3,7 @@ import { RoomOptions } from "./roomTypes";
 export enum PlayerActions {
 	move = "move",
 	takeCard = "takeCard",
+	getCardHand = "getCardHand"
 }
 
 export type PlayerType = {

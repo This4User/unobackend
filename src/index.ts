@@ -21,10 +21,9 @@ app.get("/", (req: Request, res: any) => {
 
 const rooms = new RoomsController(io);
 
-rooms.listenRoomsEvents();
 
 io.on("connection", (socket) => {
-	socket.emit("connection", rooms.rooms);
+	rooms.listenRoomsEvents(socket);
 });
 
 

@@ -53,4 +53,9 @@ export class PlayerController {
 
 		});
 	}
+
+	onStart(): void {
+		const cardHand = this.service.cardHand;
+		this.io.to(this.socket.id).emit(PlayerActions.getCardHand, cardHand);
+	}
 }
